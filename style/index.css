@@ -277,16 +277,28 @@ header {
 
 .berita-besar,
 .berita-kecil-item {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .berita-besar img,
 .berita-kecil-item img {
-  width: 100%;
   border-radius: 5px;
   object-fit: cover;
   object-position: center;
+}
+
+.berita-besar img{
+  width: 37vw;
+  height: 30vh;
+}
+
+.berita-kecil-item img {
+  width: 30vw;
+  height: 10vh;
 }
 
 .arrows button:active,
